@@ -9,8 +9,14 @@
 ///
 /// Devices group ports; the port is the primary entity of the package.
 /// The id is stable for the lifetime of a session only.
-extension type const MidiDeviceId(String value) {
+extension type const MidiDeviceId._(
+  /// The id as text, `'<backend>:<nativeId>'`.
+  String value
+) {
   // ...........................................................................
+  /// Creates the id [value], `'<backend>:<nativeId>'`.
+  const MidiDeviceId(String value) : this._(value);
+
   /// Creates the id of the device [nativeId] of [backend].
   MidiDeviceId.of({required String backend, required String nativeId})
     : value = '$backend:$nativeId';

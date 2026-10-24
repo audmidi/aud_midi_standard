@@ -10,8 +10,14 @@
 /// It is stable for the lifetime of a session only: operating systems
 /// reassign native ids when a device is plugged in again. Use the port's
 /// fingerprint to find re-plug candidates.
-extension type const MidiPortId(String value) {
+extension type const MidiPortId._(
+  /// The id as text, `'<backend>:<nativeId>'`.
+  String value
+) {
   // ...........................................................................
+  /// Creates the id [value], `'<backend>:<nativeId>'`.
+  const MidiPortId(String value) : this._(value);
+
   /// Creates the id of the port [nativeId] of [backend].
   MidiPortId.of({required String backend, required String nativeId})
     : value = '$backend:$nativeId';

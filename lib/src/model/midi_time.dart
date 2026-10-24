@@ -10,7 +10,14 @@
 /// All timestamps of the package use this clock: input events carry the
 /// operating system's receive time converted to it, and outputs schedule
 /// against it. The epoch is arbitrary; only differences carry meaning.
-extension type const MidiTime(int microseconds) {
+extension type const MidiTime._(
+  /// The microseconds since the epoch of the clock.
+  int microseconds
+) {
+  // ...........................................................................
+  /// Creates the time [microseconds] after the epoch of the clock.
+  const MidiTime(int microseconds) : this._(microseconds);
+
   // ...........................................................................
   /// The epoch of the clock.
   static const MidiTime zero = MidiTime(0);
