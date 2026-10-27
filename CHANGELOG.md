@@ -5,9 +5,9 @@
 ### Added
 
 - Add MidiKey and MidiMessageCallback
-
-MidiKey: the channel and note number a note message refers to, with JSON and copyWith
-MidiMessageCallback: the signature of a receiver of message lists
+  - MidiKey: the channel and note number a note message refers to, with
+    JSON and copyWith
+  - MidiMessageCallback: the signature of a receiver of message lists
 
 ## 0.1.1 - 2026-10-24
 
