@@ -28,8 +28,10 @@ Part of the aud_midi family, see [aud_midi](https://github.com/audmidi/aud_midi)
   names kept), RPNs, General MIDI 1 and 2, manufacturer ids, universal
   SysEx, MIDI time code, UMP status values, flex data, chords
 - Models: ports, devices, capabilities, virtual ports, BLE peripherals,
-  network hosts and sessions, events, packets, diagnostics — immutable,
-  with JSON and `copyWith`
+  network hosts and sessions, events, packets, diagnostics, keys
+  (`MidiKey`: channel and note) — immutable, with JSON and `copyWith`
+- Callbacks: `MidiIssueCallback` for parser issues, `MidiMessageCallback`
+  for receivers of message lists
 - 100 % test coverage; specification references in every doc comment
 
 ## Installation
