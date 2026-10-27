@@ -32,7 +32,10 @@ Teil der aud_midi-Familie, siehe [aud_midi](https://github.com/audmidi/aud_midi)
   Universal SysEx, MIDI Time Code, UMP-Statuswerte, Flex Data, Akkorde
 - Modelle: Ports, Geräte, Capabilities, virtuelle Ports,
   BLE-Peripheriegeräte, Netzwerk-Hosts und -Sessions, Events, Pakete,
-  Diagnosen — unveränderlich, mit JSON und `copyWith`
+  Diagnosen, Keys (`MidiKey`: Kanal und Note) — unveränderlich, mit JSON
+  und `copyWith`
+- Callbacks: `MidiIssueCallback` für Parser-Probleme,
+  `MidiMessageCallback` für Empfänger von Nachrichtenlisten
 - 100 % Testabdeckung; Spezifikationsverweise in jedem Doc-Kommentar
 
 ## Installation

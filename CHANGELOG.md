@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.2.0 - 2026-10-27
+
+### Added
+
+- Add MidiKey and MidiMessageCallback
+- MidiKey: the channel and note number a note message refers to, with JSON and copyWith
+- MidiMessageCallback: the signature of a receiver of message lists
+
+### Changed
+
+- Upgrade the DNA and add the blog post
+
 ## 0.1.1 - 2026-10-24
 
 ### Changed
