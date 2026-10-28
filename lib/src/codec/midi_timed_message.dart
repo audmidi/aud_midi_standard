@@ -15,5 +15,7 @@ typedef MidiTimedMessage = ({MidiMessage message, MidiTime time});
 // #############################################################################
 /// Receives the issues a parser or decoder meets: the [kind] of the loss
 /// and a human-readable [cause].
-typedef MidiIssueCallback =
-    void Function(MidiDiagnosticKind kind, String cause);
+typedef MidiIssueCallback = void Function(
+  MidiDiagnosticKind kind,
+  String cause,
+);

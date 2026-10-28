@@ -10,7 +10,7 @@ import 'package:test/test.dart';
 void main() {
   const host = MidiNetworkHostInfo(
     name: 'Studio Mac',
-    address: '192.168.1.20',
+    address: '192.0.2.20',
     port: 5004,
   );
   const stats = MidiNetworkLossStats(packetsReceived: 10, packetsLost: 1);

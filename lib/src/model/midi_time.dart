@@ -12,7 +12,7 @@
 /// against it. The epoch is arbitrary; only differences carry meaning.
 extension type const MidiTime._(
   /// The microseconds since the epoch of the clock.
-  int microseconds
+  int microseconds,
 ) {
   // ...........................................................................
   /// Creates the time [microseconds] after the epoch of the clock.

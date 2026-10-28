@@ -12,7 +12,7 @@
 /// fingerprint to find re-plug candidates.
 extension type const MidiPortId._(
   /// The id as text, `'<backend>:<nativeId>'`.
-  String value
+  String value,
 ) {
   // ...........................................................................
   /// Creates the id [value], `'<backend>:<nativeId>'`.
