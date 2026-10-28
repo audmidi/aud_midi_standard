@@ -10,7 +10,7 @@ import 'package:test/test.dart';
 void main() {
   const host = MidiNetworkHostInfo(
     name: 'Studio Mac',
-    address: '192.168.1.20',
+    address: '192.0.2.20',
     port: 5004,
     source: MidiNetworkHostSource.bonjour,
     serviceType: MidiNetworkHostInfo.networkMidi2ServiceType,
@@ -18,7 +18,7 @@ void main() {
 
   const hostJson = {
     'name': 'Studio Mac',
-    'address': '192.168.1.20',
+    'address': '192.0.2.20',
     'port': 5004,
     'source': 'bonjour',
     'serviceType': '_midi2._udp',
@@ -120,7 +120,7 @@ void main() {
       test('lists every field', () {
         expect(
           host.toString(),
-          "MidiNetworkHostInfo(name: 'Studio Mac', address: '192.168.1.20', "
+          "MidiNetworkHostInfo(name: 'Studio Mac', address: '192.0.2.20', "
           "port: 5004, source: bonjour, serviceType: '_midi2._udp')",
         );
       });

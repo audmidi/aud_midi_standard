@@ -11,7 +11,7 @@
 /// The id is stable for the lifetime of a session only.
 extension type const MidiDeviceId._(
   /// The id as text, `'<backend>:<nativeId>'`.
-  String value
+  String value,
 ) {
   // ...........................................................................
   /// Creates the id [value], `'<backend>:<nativeId>'`.

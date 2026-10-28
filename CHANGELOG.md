@@ -1,5 +1,16 @@
 # Changelog
 
+## Unreleased
+
+### Changed
+
+- Require Dart 3.13
+
+- Reformat 7 files with the Dart 3.13 formatter
+- Add the blog post of this change, in English and German
+- Bring the README to the README template, in English and German
+- Replace organisation identifiers in examples by placeholders
+
 ## 0.2.0 - 2026-10-27
 
 ### Added

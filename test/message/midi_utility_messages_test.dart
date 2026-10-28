@@ -75,9 +75,8 @@ void main() {
         [
           '${const MidiJrClock(time: 1)}',
           '${const MidiJrTimestamp(time: 2)}',
-          const MidiDeltaClockstampTicksPerQuarterNote(
-            ticksPerQuarterNote: 3,
-          ).toString(),
+          const MidiDeltaClockstampTicksPerQuarterNote(ticksPerQuarterNote: 3)
+              .toString(),
           '${const MidiDeltaClockstamp(ticks: 4)}',
         ],
         equals([

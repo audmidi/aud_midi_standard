@@ -9,7 +9,7 @@ topics:
   - music
 
 environment:
-  sdk: ^3.12.2
+  sdk: ^3.13.0
 
 dev_dependencies:
   dna_audanika: ^0.1.0

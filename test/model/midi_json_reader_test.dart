@@ -215,18 +215,17 @@ void main() {
     group('enumValue<E>(key, values)', () {
       test('returns the value of the name', () {
         expect(
-          reader({
-            'direction': 'output',
-          }).enumValue('direction', MidiDirection.values),
+          reader({'direction': 'output'})
+              .enumValue('direction', MidiDirection.values),
           MidiDirection.output,
         );
       });
 
       test('throws when the name is unknown', () {
         expect(
-          () => reader({
-            'direction': 'up',
-          }).enumValue('direction', MidiDirection.values),
+          () =>
+              reader({'direction': 'up'})
+                  .enumValue('direction', MidiDirection.values),
           throwsFormat(
             "Model: \"direction\" must be one of input, output, but is 'up'",
           ),

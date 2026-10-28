@@ -224,9 +224,8 @@ void main() {
       for (final maxPacketLength in [5, 6, 20, 64, 512]) {
         test('restores messages and times in packets of $maxPacketLength', () {
           final decoder = MidiBleDecoder();
-          final packets = MidiBleEncoder(
-            maxPacketLength: maxPacketLength,
-          ).encode(messages);
+          final packets = MidiBleEncoder(maxPacketLength: maxPacketLength)
+              .encode(messages);
           expect(
             packets.every((packet) => packet.length <= maxPacketLength),
             isTrue,
