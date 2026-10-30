@@ -5,6 +5,7 @@
 ### Added
 
 - Add MidiNote and ChannelVelocity
+- Add the blog post of MidiNote and ChannelVelocity
 
 ## 0.3.0 - 2026-10-28
 
