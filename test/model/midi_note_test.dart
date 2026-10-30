@@ -36,6 +36,19 @@ void main() {
       });
     });
 
+    group('example(...)', () {
+      test('is middle C on channel 0 with velocity 76', () {
+        expect(
+          MidiNote.example(),
+          const MidiNote(channel: 0, note: 60, velocity: 76),
+        );
+      });
+
+      test('takes the given values', () {
+        expect(MidiNote.example(channel: 9, note: 67, velocity: 76), note);
+      });
+    });
+
     group('key', () {
       test('is the channel and the note without the velocity', () {
         expect(note.key, const MidiKey(channel: 9, note: 67));

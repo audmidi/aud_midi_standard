@@ -23,7 +23,8 @@ found in the LICENSE file in the root of this package.
 ## Strategie
 
 - `MidiNote` und `ChannelVelocity` als Modelle wie `MidiKey` anlegen:
-  unveränderlich, Wertgleichheit, JSON und `copyWith`.
+  unveränderlich, Wertgleichheit, JSON und `copyWith`, dazu eine
+  `example`-Factory für Tests und Doku, wie es der Code-Guide verlangt.
 - `MidiNote` aus seinen Feldern zusammensetzen und ihm einen Getter `key`
   geben, statt es von `MidiKey` abzuleiten.
 - `ChannelVelocity` die `MidiNote` einer Notennummer erzeugen lassen.

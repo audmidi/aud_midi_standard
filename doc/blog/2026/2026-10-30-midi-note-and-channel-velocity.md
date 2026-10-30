@@ -23,7 +23,8 @@ found in the LICENSE file in the root of this package.
 ## Strategy
 
 - Add `MidiNote` and `ChannelVelocity` as models like `MidiKey`:
-  immutable, value equality, JSON and `copyWith`.
+  immutable, value equality, JSON and `copyWith`, plus an `example`
+  factory for tests and docs, as the code guide asks.
 - Compose `MidiNote` from its fields and give it a `key` getter instead of
   deriving it from `MidiKey`.
 - Let `ChannelVelocity` create the `MidiNote` of a note number.

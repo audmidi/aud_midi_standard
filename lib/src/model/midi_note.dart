@@ -26,6 +26,16 @@ final class MidiNote {
        assert(velocity >= 0 && velocity <= 127);
 
   // ...........................................................................
+  /// Creates an example note for tests and docs: middle C on channel 0
+  /// with velocity 76, or the given values.
+  factory MidiNote.example({int? channel, int? note, int? velocity}) =>
+      MidiNote(
+        channel: channel ?? 0,
+        note: note ?? 60,
+        velocity: velocity ?? 76,
+      );
+
+  // ...........................................................................
   /// Decodes a note that [toJson] encoded.
   ///
   /// Throws a [FormatException] when a key is missing or has the wrong

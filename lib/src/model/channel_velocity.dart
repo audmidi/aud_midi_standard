@@ -21,6 +21,12 @@ final class ChannelVelocity {
       assert(velocity >= 0 && velocity <= 127);
 
   // ...........................................................................
+  /// Creates an example voice for tests and docs: channel 0 with velocity
+  /// 76, or the given values.
+  factory ChannelVelocity.example({int? channel, int? velocity}) =>
+      ChannelVelocity(channel: channel ?? 0, velocity: velocity ?? 76);
+
+  // ...........................................................................
   /// Decodes a voice that [toJson] encoded.
   ///
   /// Throws a [FormatException] when a key is missing or has the wrong

@@ -33,6 +33,19 @@ void main() {
       });
     });
 
+    group('example(...)', () {
+      test('is channel 0 with velocity 76', () {
+        expect(
+          ChannelVelocity.example(),
+          const ChannelVelocity(channel: 0, velocity: 76),
+        );
+      });
+
+      test('takes the given values', () {
+        expect(ChannelVelocity.example(channel: 2, velocity: 76), voice);
+      });
+    });
+
     group('note(note)', () {
       test('plays the note on the channel with the velocity', () {
         expect(
