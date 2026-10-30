@@ -105,7 +105,9 @@ covers:
   SysEx, MIDI time code, UMP status values, flex data, chords
 - Models: ports, devices, capabilities, virtual ports, BLE peripherals,
   network hosts and sessions, events, packets, diagnostics, keys
-  (`MidiKey`: channel and note) — immutable, with JSON and `copyWith`
+  (`MidiKey`: channel and note), notes (`MidiNote`: channel, note and
+  velocity), voices (`ChannelVelocity`: channel and velocity) — immutable,
+  with JSON and `copyWith`
 - Callbacks: `MidiIssueCallback` for parser issues, `MidiMessageCallback`
   for receivers of message lists
 - 100 % test coverage; specification references in every doc comment

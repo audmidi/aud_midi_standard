@@ -109,8 +109,9 @@ deckt ab:
   Universal SysEx, MIDI Time Code, UMP-Statuswerte, Flex Data, Akkorde
 - Modelle: Ports, Geräte, Capabilities, virtuelle Ports,
   BLE-Peripheriegeräte, Netzwerk-Hosts und -Sessions, Events, Pakete,
-  Diagnosen, Keys (`MidiKey`: Kanal und Note) — unveränderlich, mit JSON
-  und `copyWith`
+  Diagnosen, Keys (`MidiKey`: Kanal und Note), Noten (`MidiNote`: Kanal,
+  Note und Velocity), Stimmen (`ChannelVelocity`: Kanal und Velocity) —
+  unveränderlich, mit JSON und `copyWith`
 - Callbacks: `MidiIssueCallback` für Parser-Probleme,
   `MidiMessageCallback` für Empfänger von Nachrichtenlisten
 - 100 % Testabdeckung; Spezifikationsverweise in jedem Doc-Kommentar

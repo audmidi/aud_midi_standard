@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.3.1 - 2026-10-30
+
+### Added
+
+- Add MidiNote and ChannelVelocity
+- Add the blog post of MidiNote and ChannelVelocity
+- Add example factories to MidiNote and ChannelVelocity
+
 ## 0.3.0 - 2026-10-28
 
 ### Changed
