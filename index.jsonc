@@ -22,6 +22,8 @@
       "aud_midi_state_matrix": "MidiMessage, MidiNoteOn, MidiNoteOff, MidiControlChange, MidiKey, MidiMessageCallback",
       "aud_tone_selection": "ChannelVelocity voices, MidiNote of the selected cells",
       "aud_playing_cells": "MidiNote, MidiKey, MidiNoteOn, MidiNoteOff, MidiMessageCallback",
+      "aud_motion_sensors": "MidiMessage, MidiControlChange, MidiControllers",
+      "aud_midi_routing": "through aud_midi: MidiMessage, MidiTransport, MidiByteEncoder, withChannel",
       "aud_midi_apple, aud_midi_android, aud_midi_windows, aud_midi_linux, aud_midi_web": "models, MidiPacket, Ump, MidiBytes"
     }
   }

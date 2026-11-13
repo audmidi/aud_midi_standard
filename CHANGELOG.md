@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+### Added
+
+- Add MidiTransport.internal and withChannel
+
 ## 0.3.1 - 2026-10-30
 
 ### Added
@@ -25,6 +31,7 @@
 - Upgrade the dependencies published since the first pass
 
 - Lift the lock file to the newest resolvable versions
+
 
 ## 0.2.0 - 2026-10-27
 

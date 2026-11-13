@@ -218,4 +218,24 @@ void main() {
       });
     }
   });
+
+  group('MidiChannelVoice1Message.withChannel', () {
+    test('should keep everything but the channel', () {
+      const messages = <MidiChannelVoice1Message>[
+        MidiNoteOff(channel: 1, note: 60, velocity: 10),
+        MidiNoteOn(channel: 1, note: 60, velocity: 100),
+        MidiPolyPressure(channel: 1, note: 60, pressure: 5),
+        MidiControlChange(channel: 1, controller: 7, value: 90),
+        MidiProgramChange(channel: 1, program: 3),
+        MidiChannelPressure(channel: 1, pressure: 4),
+        MidiPitchBend(channel: 1, value: 9000),
+      ];
+      for (final message in messages) {
+        final moved = message.withChannel(9);
+        expect(moved.channel, 9);
+        expect(moved.runtimeType, message.runtimeType);
+        expect(moved.withChannel(1), message);
+      }
+    });
+  });
 }
