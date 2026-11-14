@@ -20,8 +20,6 @@
       "aud_midi_network": "messages, models",
       "aud_midi": "re-exports the whole API",
       "aud_midi_state_matrix": "MidiMessage, MidiNoteOn, MidiNoteOff, MidiControlChange, MidiKey, MidiMessageCallback",
-      "aud_tone_selection": "ChannelVelocity voices, MidiNote of the selected cells",
-      "aud_playing_cells": "MidiNote, MidiKey, MidiNoteOn, MidiNoteOff, MidiMessageCallback",
       "aud_midi_apple, aud_midi_android, aud_midi_windows, aud_midi_linux, aud_midi_web": "models, MidiPacket, Ump, MidiBytes"
     }
   }

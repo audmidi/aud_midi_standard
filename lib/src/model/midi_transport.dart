@@ -24,6 +24,10 @@ enum MidiTransport {
   /// driver, e.g. a built-in synthesizer or an inter-application bus.
   software,
 
+  /// The port is served inside the process that uses it, e.g. a sound
+  /// engine of the app itself; no operating system port is involved.
+  internal,
+
   /// The transport is not known.
   unknown,
 }

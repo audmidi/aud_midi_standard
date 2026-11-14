@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.0.0 - 2026-11-14
+
+### Added
+
+- Add MidiTransport.internal and withChannel
+
+### Changed
+
+- Require Flutter 3.50 and Dart 3.14, build the DNA
+- Keep the index to repos of this organization
+
 ## 0.3.1 - 2026-10-30
 
 ### Added

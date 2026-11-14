@@ -21,6 +21,40 @@ sealed class MidiChannelVoice1Message extends MidiMessage {
 
   @override
   UmpMessageType get umpMessageType => UmpMessageType.midi1ChannelVoice;
+
+  // ...........................................................................
+  /// Returns a copy of this message on [channel], 0 to 15.
+  MidiChannelVoice1Message withChannel(int channel) => switch (this) {
+    final MidiNoteOff m => MidiNoteOff(
+      channel: channel,
+      note: m.note,
+      velocity: m.velocity,
+    ),
+    final MidiNoteOn m => MidiNoteOn(
+      channel: channel,
+      note: m.note,
+      velocity: m.velocity,
+    ),
+    final MidiPolyPressure m => MidiPolyPressure(
+      channel: channel,
+      note: m.note,
+      pressure: m.pressure,
+    ),
+    final MidiControlChange m => MidiControlChange(
+      channel: channel,
+      controller: m.controller,
+      value: m.value,
+    ),
+    final MidiProgramChange m => MidiProgramChange(
+      channel: channel,
+      program: m.program,
+    ),
+    final MidiChannelPressure m => MidiChannelPressure(
+      channel: channel,
+      pressure: m.pressure,
+    ),
+    final MidiPitchBend m => MidiPitchBend(channel: channel, value: m.value),
+  };
 }
 
 // #############################################################################

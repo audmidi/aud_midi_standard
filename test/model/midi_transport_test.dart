@@ -17,6 +17,7 @@ void main() {
           'network',
           'virtual',
           'software',
+          'internal',
           'unknown',
         ]);
       });
